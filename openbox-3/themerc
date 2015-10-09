@@ -1,0 +1,86 @@
+!# Openbox theme for absolute GTK 2.x Theme.
+!# Organization: Steelsquid
+!# Project: AbsoluteOpenbox
+!# Licensing: LGPL (GNU Lesser General Public License)
+!# Author: Andreas Nilsson
+!# Contact: steelsquid@gmail.com
+!# Homepage: http://steelsquid.org/AbsoluteOpenbox
+!# Revision history: 
+!#  - 2012-04-13  Created
+
+!# Modded 16.08.12 to fit Roxy Gtk2
+
+!# General stuff
+!# --------------------------------------
+border.width: 1
+padding.width: 4
+padding.height: 4
+window.handle.width: 2
+window.client.padding.width: 0
+*.justify: center
+
+
+!# Menu settings
+!# --------------------------------------
+menu.overlap: 1
+menu.border.color: #e4e4e4
+menu.border.width: 1
+menu.title.bg: solid flat
+menu.title.bg.color: #c5c5c5
+menu.title.text.color: #333333
+menu.items.bg: Flat Solid
+menu.items.bg.color: #e4e4e4
+menu.items.text.color: #333333
+menu.items.disabled.text.color: #aaaaaa
+menu.items.active.bg: Flat Solid border
+menu.items.active.bg.color: #d5d5d5
+menu.items.active.bg.border.color: #c5c5c5
+menu.items.active.text.color: #333333
+menu.separator.width: 1
+menu.separator.padding.width: 2
+menu.separator.padding.height: 2
+menu.separator.color: #c5c5c5
+
+
+!# Border
+!# --------------------------------------
+window.*.handle.bg: Flat Solid
+window.*.handle.bg.color: #ededed
+window.*.grip.bg: Flat Solid
+window.*.grip.bg.color: #ededed
+window.*.border.color: #000000
+
+
+!# Active window
+!# --------------------------------------
+window.active.title.separator.color: #e4e4e4
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #4d4d4d
+window.active.title.bg: Flat Solid
+window.active.title.bg.color: #e4e4e4
+window.active.button.*.bg: Flat Solid
+window.active.button.*.image.color: #4d4d4
+window.active.button.*.bg.color: #e4e4e4
+window.active.button.*.hover.bg: Flat Solid border
+window.active.button.*.hover.bg.color: #ededed
+window.active.button.*.hover.bg.border.color: #000000
+window.active.button.*.pressed.bg: Flat Solid border
+window.active.button.*.pressed.bg.color: #ebebeb
+window.active.button.*.pressed.bg.border.color: #000000
+window.active.border.color: #e4e4e4
+
+!# Inactive window
+!# --------------------------------------
+window.inactive.title.separator.color: #ededed
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #70747d
+window.inactive.title.bg: Flat Solid
+window.inactive.title.bg.color: #ededed
+window.inactive.button.*.image.color: #70747d
+window.inactive.button.*.bg: Flat Solid
+window.inactive.button.*.bg.color: #ededed
+window.inactive.border.color: #000000
+
+
+
+
