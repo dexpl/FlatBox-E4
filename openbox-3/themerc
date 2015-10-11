@@ -26,12 +26,11 @@ osd.bg.color: #e4e4e4
 osd.*.color: #e4e4e4
 osd.*.bg: flat
 osd.border.color: #cacaca
-osd.border.width: 1
-osd.hilight.bg: flat
-osd.hilight.bg.color: #cacaca
-!osd.unhilight.bg: flat
-!osd.unhilight.bg.color: #ffff00
-osd.*.text.color: #333333
+!osd.border.width: 1
+!osd.hilight.bg.color: #cacaca
+!osd.unhilight.bg.color: #cacaca
+osd.unhilight.bg.color: #777777
+osd.*.text.color: #777777
 
 
 !# Menu settings
