@@ -29,7 +29,7 @@ osd.border.color: #cacaca
 !osd.border.width: 1
 !osd.hilight.bg.color: #cacaca
 !osd.unhilight.bg.color: #cacaca
-osd.unhilight.bg.color: #777777
+osd.unhilight.bg.color: #efefef
 osd.*.text.color: #777777
 
 
