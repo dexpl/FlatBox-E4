@@ -3,54 +3,54 @@
 
 /* default */
 * {
-    -GtkArrow-arrow-scaling: 0.5;
-    border: 1px;
-    -GtkButton-interior-focus: true;
-    -GtkButtonBox-child-min-height: 24;
-    -GtkButtonBox-child-internal-pad-y: 1;
-    -GtkCheckButton-indicator-size: 16;
-    -GtkCheckMenuItem-indicator-size: 14;
-    -GtkExpander-expander-size: 8;
-    -GtkHTML-link-color: @link_color;
-    -GtkIMHtml-hyperlink-color: @link_color;
-/*
-    -GtkMenu-horizontal-padding: 0;
-    -GtkMenu-vertical-padding: 0;
-*/
-    padding: 0;
-    -GtkPaned-handle-size: 4;
-    -GtkProgressBar-min-horizontal-bar-height: 12;
-    -GtkProgressBar-min-vertical-bar-width: 12;
-    -GtkRange-slider-width: 8;
-    -GtkRange-stepper-spacing: 0;
-    -GtkRange-trough-border: 0;
-    -GtkRange-trough-under-steppers: 1;
-    -GtkScrollbar-has-backward-stepper: false;
-    -GtkScrollbar-has-forward-stepper: false;
-    -GtkScrollbar-min-slider-length: 80;
-    -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 1;
-    -GtkStatusbar-shadow-type: none;
-    -GtkTextView-error-underline-color: @error_color;
-    -GtkToolButton-icon-spacing: 6;
-    -GtkToolItemGroup-expander-size: 8;
-    -GtkTreeView-expander-size: 8;
-/*
-    -GtkWidget-focus-line-width: 1;
-    -GtkWidget-focus-padding: 0;
-*/
-    outline-width: 1px;
-    -GtkWidget-link-color: @link_color;
-    -GtkWidget-visited-link-color: @link_color;
-    -GtkWindow-resize-grip-height: 0;
-    -GtkWindow-resize-grip-width: 0;
-    -WnckTasklist-fade-overlay-rect: 0;
+	-GtkArrow-arrow-scaling: 0.5;
+border: 1px;
+				/*
+					 -GtkButton-interior-focus: true;
+				 */
+				outline-style: solid;
+				-GtkButtonBox-child-min-height: 24;
+				-GtkButtonBox-child-internal-pad-y: 1;
+				-GtkCheckButton-indicator-size: 16;
+				-GtkCheckMenuItem-indicator-size: 14;
+				-GtkExpander-expander-size: 8;
+				-GtkHTML-link-color: @link_color;
+				-GtkIMHtml-hyperlink-color: @link_color;
+				/*
+					 -GtkMenu-horizontal-padding: 0;
+					 -GtkMenu-vertical-padding: 0;
+				 */
+padding: 0;
+				 -GtkPaned-handle-size: 4;
+				 -GtkProgressBar-min-horizontal-bar-height: 12;
+				 -GtkProgressBar-min-vertical-bar-width: 12;
+				 -GtkRange-slider-width: 8;
+				 -GtkRange-stepper-spacing: 0;
+				 -GtkRange-trough-border: 0;
+				 -GtkRange-trough-under-steppers: 1;
+				 -GtkScrollbar-has-backward-stepper: false;
+				 -GtkScrollbar-has-forward-stepper: false;
+				 -GtkScrollbar-min-slider-length: 80;
+				 -GtkScrolledWindow-scrollbar-spacing: 0;
+				 -GtkScrolledWindow-scrollbars-within-bevel: 1;
+				 -GtkStatusbar-shadow-type: none;
+				 -GtkTextView-error-underline-color: @error_color;
+				 -GtkToolButton-icon-spacing: 6;
+				 -GtkToolItemGroup-expander-size: 8;
+				 -GtkTreeView-expander-size: 8;
+				 /*
+						-GtkWidget-focus-padding: 0;
+					*/
+				 outline-width: 1px;
+				 -GtkWindow-resize-grip-height: 0;
+				 -GtkWindow-resize-grip-width: 0;
+				 -WnckTasklist-fade-overlay-rect: 0;
 
-    background-clip: padding-box;
+				 background-clip: padding-box;
 
-    outline-color: alpha(@theme_selected_bg_color, 0.5);
-    outline-style: solid;
-    outline-offset: 0;
+				 outline-color: alpha(@theme_selected_bg_color, 0.5);
+				 outline-style: solid;
+				 outline-offset: 0;
 }
 
 /***************
@@ -200,8 +200,8 @@ GtkAssistant .sidebar {
  * button *
  **********/
 .button {
-    -GtkWidget-focus-padding: 1;
-    -GtkWidget-focus-line-width: 0;
+    outline-offset: 1;
+    outline-width: 0;
 
     padding: 3px;
     border-width: 1px;
@@ -287,8 +287,7 @@ GtkAssistant .sidebar {
 row:selected,
 row:selected:hover,
 row:selected:focus {
-    -GtkWidget-focus-padding: 1;
-    -GtkWidget-focus-line-width: 0;
+    outline-width: 0;
 
     border-width: 1px 0;
     border-style: solid;
@@ -1653,7 +1652,7 @@ OsScrollbar:disabled {
 
 .menuitem.separator {
     -GtkMenuItem-horizontal-padding: 0;
-    -GtkWidget-separator-height: 1;
+    min-height: 1;
 
     border-style: none;
     color: shade(@menu_bg_color, 0.9);
@@ -1661,7 +1660,6 @@ OsScrollbar:disabled {
 
 GtkComboBox .separator {
     /* always disable separators */
-    -GtkWidget-wide-separators: true;
     -GtkWidget-horizontal-separator: 0;
     -GtkWidget-vertical-separator: 0;
 
@@ -2871,8 +2869,7 @@ GtkColorButton.button {
  ************/
 GtkTreeView {
     -GtkTreeView-vertical-separator: 0;
-    -GtkWidget-focus-line-width: 1;
-    -GtkWidget-focus-padding: 1;
+    outline-offset: 1;
 }
 
 GtkTreeView.dnd {
@@ -2963,7 +2960,6 @@ GtkViewport.frame {
 GtkFontButton .separator,
 GtkFileChooserButton .separator {
     /* always disable separators */
-    -GtkWidget-wide-separators: true;
     -GtkWidget-horizontal-separator: 0;
     -GtkWidget-vertical-separator: 0;
 }
@@ -3195,9 +3191,7 @@ GtkOverlay.osd {
 
 .osd GtkProgressBar,
 GtkProgressBar.osd {
-    -GtkProgressBar-xspacing: 0;
-    -GtkProgressBar-yspacing: 2px;
-    -GtkProgressBar-min-horizontal-bar-height: 2px;
+    min-height: 2px;
 
     padding: 0;
 }
